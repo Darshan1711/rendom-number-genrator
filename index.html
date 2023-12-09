@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random number</title>
+</head>
+<body>
+    <h1>Random number Genrator</h1>
+    <button onclick="rad()" id="f1">Genrator random number</button>
+    <p id="p1"></p>
+
+    <script>
+        function rad(){
+
+            var num = parseInt(document.getElementById("f1".value))
+            var x = Math.floor(Math.random() * 1000);
+            document.getElementById("p1").innerHTML = x;
+
+        }
+    </script>
+</body>
+</html>
